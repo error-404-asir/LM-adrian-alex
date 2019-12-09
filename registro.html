@@ -23,47 +23,108 @@
     </nav>
     <main>
         <!-- "MAIN" Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.-->
-        <h2>Datos de mi cuenta</h2>
-
-        <p>* Dato obligatorio</p>
-
         <section>
+
+            <h2>Datos de mi cuenta</h2>
+
+            <p>* Dato obligatorio</p>
 
             <form action="#" method="post">
 
                 <fieldset>
                     <legend>Personal</legend>
-                    <label for="input_nombre">Nombre:</label>
-                    <input id="input_nombre" type="text" name="nombre" required />*
 
-                    <label for="input_apellidos">Apellidos:</label>
-                    <input id="input_apellidos" type="text" name="apellidos" required />*
+                    <p><label for="input_nombre">Nombre:</label>
+                        <input id="input_nombre" type="text" minlength="5" maxlength="15" pattern="[A-Za-z0-9]+" />*</p>
 
-                    <label for="input_nif-cif">NIF/CIF:</label>
-                    <input id="input_nif-cif" type="text" name="nif-cif" placeholder="Introduzca su DNI"
-                        pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" required />* p.ej.
-                    01234567L; IMPRESCINDIBLE para envíos a Canarias,Ceuta y Melilla
+                    <p><label for=" input_apellidos">Apellidos:</label>
+                        <input id="input_apellidos" type="text" required />*</p>
 
-                    <label for="input_fechanac">Fecha de nacimiento:</label>
-                    <input id="input_fechanac" type="date" name="fecha_nac" required>* p.ej. 21/05/1970
+                    <p><label for="input_nif-cif">NIF/CIF:</label>
+                        <input id="input_nif-cif" type="text" placeholder="Introduzca su DNI"
+                            pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" required />*
+                        p.ej.
+                        01234567L; IMPRESCINDIBLE para envíos a Canarias,Ceuta y Melilla</p>
 
-                    <label for="input_email">Email:</label>
-                    <input id="input_email" type="email" name="email" required>*
+                    <p><label for="input_fechanac">Fecha de nacimiento:</label>
+                        <input id="input_fechanac" type="date" required>*</p>
 
-                    <label for="input_tel">Teléfono:</label>
-                    <input id="input_tel" type="tel" name="telefono" pattern="[0-9]{9}" required />*
+                    <p><label for="input_email">Email:</label>
+                        <input id="input_email" type="email" required>*</p>
+
+                    <p><label for="input_tel">Teléfono:</label>
+                        <input id="input_tel" type="tel" pattern="[0-9]{9}" required />*</p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Dirección</legend>
+
+                    <p><label for="tipo_via">Tipo de vía:</label>
+                        <select id="tipo_via" value="calle">
+                            <option value="calle">Calle</option>
+                            <option value="avenida">Avenida</option>
+                            <option value="ronda">Ronda</option>
+                            <option value="plaza">Plaza</option>
+                        </select></p>
+
+                    <p><label for="input_direccion">Dirección:</label>
+                        <input id="input_direccion" type="text" required />*</p>
+
+                    <p><label for="input_cp">Código postal:</label>
+                        <input id="input_cp" type="text" pattern="[0-9]{5}" required />*</p>
+
+                    <p><label for="input_pobl">Población:</label>
+                        <input id="input_pobl" type="text" required />*</p>
+
+                    <p><label for="input_prov">Provincia:</label>
+                        <input id="input_prov" type="text" required />*</p>
+
+                    <p><label for="input_pais">País:</label>
+                        <input id="input_pais" type="text" required />*</p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros datos</legend>
+
+                    <p><label>¿Para qué usas principalmente el ordenador?</label>
+                        <input type="checkbox" /><span>Ofimática</span>
+                        <input type="checkbox" /><span>Gaming</span>
+                        <input type="checkbox" /><span>Navegar</span>
+                        <input type="checkbox" /><span>Otros</span>
+                        <textarea placeholder="Escribe aquí otros usos..." rows="10" cols="60"></textarea>
+                    </p>
+                    <p>
+                        <label>¿Qué tipo de ordenador prefieres usar?</label>
+                        <input type="radio" name="tipo_pc" value="sobremesa" /><span>Sobremesa</span>
+                        <input type="radio" name="tipo_pc" value="portatil" /><span>Portátil</span>
+                    </p>
                 </fieldset>
 
                 <fieldset>
                     <legend>Boletín de noticias</legend>
+
+                    <p><strong>¿Quieres que cada semana enviemos a tu correo todo tipo de cosas asombrosas?</strong> Nos
+                        encantaría
+                        mantenerte informado de nuestras novedades y promociones.</p>
+
+                    <p>Por supuesto, <a href="privacidad.html" target="blank">aquí</a> tienes toda la información sobre
+                        nuestra <strong>Política de Privacidad</strong>.</p>
+
+                    <p><label for="subscribe">Recibir información por correo electrónico</label>
+                        <input id="subscribe" type="checkbox" /></p>
+
                 </fieldset>
 
                 <fieldset>
                     <legend>Contraseña</legend>
+                    <p><label for="input_contrasenya">Contraseña:</label>
+                        <input id="input_contrasenya" type="text" placeholder="Tu contraseña" minlength="8" required />*
+                    </p>
+                    <p><label for="input_rcontrasenya">Repetir contraseña:</label>
+                        <input id="input_rcontrasenya" type="text" placeholder="Tu contraseña" minlength="8"
+                            required />*</p>
+                    <p>La contraseña debe contener como mínimo 8 caracteres</p>
                 </fieldset>
 
                 <input type="submit" value="Enviar" />
