@@ -6,12 +6,13 @@
     <meta name="author" content="Alejandro-Adrian" />
     <meta name="keywords" content="registro" />
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="estilos/estilo.css" />
 </head>
 
 <body>
     <header>
-        <h1>Registrate en nuestra tienda</h1>
-        <hr />
+        <img src="img/logo.png" title="Logo" alt="logo">
+        <h1>PCs a Medida</h1>
     </header>
     <nav>
         <ul>
@@ -23,10 +24,30 @@
     <main>
         <!--Define el contenido principal o importante en el documento. Solamente existe un elemento <main> en el documento.-->
         <h2>Datos de mi cuenta</h2>
+        <p>* Dato obligatorio</p>
         <section>
-            <form method="post" action="urldelphp.php">
+            <form action="#" method="post">
                 <fieldset>
                     <legend>Personal</legend>
+                    <label for="input_nombre">Nombre:</label>
+                    <input id="input_nombre" type="text" name="nombre" required />*
+
+                    <label for="input_apellidos">Apellidos:</label>
+                    <input id="input_apellidos" type="text" name="apellidos" required />*
+
+                    <label for="input_nif-cif">NIF/CIF:</label>
+                    <input id="input_nif-cif" type="text" name="nif-cif" placeholder="Introduzca su DNI"
+                        pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" required />*
+
+                    <label for="input_fechanac">Fecha de nacimiento:</label>
+                    <input id="input_fechanac" type="date" name="fecha_nac" required>*
+
+                    <label for="input_email">Email:</label>
+                    <input id="input_email" type="email" name="email" required>*
+
+                    <label for="input_tel">Teléfono:</label>
+                    <input id="input_tel" type="tel" name="telefono" pattern="[0-9]{9}" required />*
+
                 </fieldset>
                 <fieldset>
                     <legend>Dirección</legend>
@@ -37,6 +58,8 @@
                 <fieldset>
                     <legend>Contraseña</legend>
                 </fieldset>
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpiar" />
             </form>
         </section>
     </main>
