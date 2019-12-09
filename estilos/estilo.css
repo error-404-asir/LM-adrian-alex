@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+}/*Partimos de unas premisas con valor 0*/
 
 body {
     font-family: 'Verdana'
@@ -15,11 +15,11 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
-}
+}/*Aplicamos flex al header*/
 
 main {
     display: flex;
-}
+}/*Aplicamos flex al main*/
 
 /*header img {
     width: 200px;
