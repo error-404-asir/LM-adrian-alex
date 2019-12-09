@@ -1,34 +1,41 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Verdana'
 }
 
 header {
-    background-color: rgb(18, 112, 14);
+    display: flex;
+    background-color: rgb(29, 83, 27);
     padding: 25px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
 
-header > img {
+main {
+    display: flex;
+}
+
+/*header img {
     width: 200px;
     float: left;
-}
+}*/
 
 nav {
     
-    float: left;
+    /*float: left;*/
     width: 12.2%;
-    background-color: rgb(18, 168, 25);
+    background-color: rgb(66, 167, 71);
 }
 
 nav ul {
     margin: 10%;
-    padding: 0%;
+    /*padding: 0%;*/
     list-style-type: none;
     text-align: center;
 }
@@ -47,7 +54,27 @@ nav ul > li {
 }
 
 section {
-    float: left;
+    /*float: left;*/
+    width: 100%;
+    background-color: rgba(150, 231, 157, 0.788);
+    color: rgb(9, 44, 0);
+}
+
+section > p {
+    margin: 1%;
+}
+
+fieldset {
+    padding: 1%;
+    color: rgb(0, 0, 0);
+}
+
+fieldset > legend {
+    font-size: x-large;
+}
+
+footer {
+    text-align: center;
     background-color: rgba(10, 82, 16, 0.788);
     color: rgb(224, 224, 224);
 }
