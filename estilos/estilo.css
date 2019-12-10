@@ -67,6 +67,10 @@ article {
     margin: 2%;
 }
 
+section > h3 {
+    margin: 1%;
+}
+
 table {
     border-collapse: collapse;
     width: 60%;
