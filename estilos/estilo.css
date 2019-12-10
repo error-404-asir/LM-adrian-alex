@@ -110,3 +110,9 @@ footer {
     background-color: rgba(10, 82, 16, 0.788);
     color: rgb(224, 224, 224);
 }
+
+#enlaces {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: none;
+}
