@@ -9,7 +9,6 @@ body {
 }
 
 header {
-    display: flex;
     background-color: rgb(29, 83, 27);
     padding: 25px;
     text-align: center;
@@ -21,10 +20,10 @@ main {
     display: flex;
 }/*Aplicamos flex al main*/
 
-/*header img {
-    width: 200px;
+header img {
+    width: 100px;
     float: left;
-}*/
+}
 
 nav {
     
@@ -35,7 +34,7 @@ nav {
 
 nav ul {
     margin: 10%;
-    padding: 10%;
+    padding: 0%;
     list-style-type: none;
     text-align: center;
 }
@@ -61,7 +60,11 @@ section {
 }
 
 section > p {
-    margin: 1%;
+    margin: 10%;
+}
+
+article {
+    margin: 2%;
 }
 
 fieldset {
