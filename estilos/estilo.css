@@ -63,6 +63,10 @@ article > p {
     margin: 1%;
 }
 
+section > p {
+    margin: 1%;
+}
+
 article {
     margin: 2%;
 }
