@@ -59,7 +59,7 @@ section {
     color: rgb(9, 44, 0);
 }
 
-section > p {
+article > p {
     margin: 1%;
 }
 
@@ -67,12 +67,16 @@ article {
     margin: 2%;
 }
 
-section > h3 {
+article > h3 {
     margin: 1%;
 }
 
-section > img {
+article > img {
     margin: 1%;
+}
+
+article > h1 {
+    font-size: 30px;
 }
 
 table {
