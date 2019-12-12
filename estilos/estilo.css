@@ -14,11 +14,11 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
-}/*Aplicamos flex al header*/
+}
 
 main {
-    display: flex;
-}/*Aplicamos flex al main*/
+    display: flex;/*Aplicamos flex al main*/
+}
 
 header img {
     width: 100px;
@@ -26,8 +26,6 @@ header img {
 }
 
 nav {
-    
-    /*float: left;*/
     width: 12.2%;
     background-color: rgb(66, 167, 71);
 }
@@ -53,7 +51,6 @@ nav ul > li {
 }
 
 section {
-    /*float: left;*/
     width: 100%;
     background-color: rgba(150, 231, 157, 0.788);
     color: rgb(9, 44, 0);
