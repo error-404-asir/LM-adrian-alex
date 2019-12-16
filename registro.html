@@ -61,8 +61,9 @@
                     <legend>Dirección</legend>
 
                     <p><label for="tipo_via">Tipo de vía:</label>
-                        <select id="tipo_via" value="calle">
-                            <option value="calle">Calle</option>
+                        <select id="tipo_via">
+                            <option value="calle" selected>Calle</option>
+                            <!--Corregido el fallo de formulario: eliminado "value" y añadido selected-->
                             <option value="avenida">Avenida</option>
                             <option value="ronda">Ronda</option>
                             <option value="plaza">Plaza</option>
@@ -120,7 +121,8 @@
                 <fieldset>
                     <legend>Contraseña</legend>
                     <p><label for="input_contrasenya">Contraseña:</label>
-                        <input id="input_contrasenya" type="password" placeholder="Tu contraseña" minlength="8" required />*
+                        <input id="input_contrasenya" type="password" placeholder="Tu contraseña" minlength="8"
+                            required />*
                     </p>
                     <p><label for="input_rcontrasenya">Repetir contraseña:</label>
                         <input id="input_rcontrasenya" type="password" placeholder="Tu contraseña" minlength="8"
